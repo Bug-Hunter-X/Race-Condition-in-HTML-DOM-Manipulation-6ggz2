@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+  <script>
+    // Incorrectly accessing the div's innerHTML before it's fully parsed
+    document.getElementById("myDiv").innerHTML = "This text replaces the original content.";
+  </script>
+</body>
+</html>
